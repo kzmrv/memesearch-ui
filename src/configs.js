@@ -1,0 +1,1 @@
+export const BE_BASIC_URL = 'http://localhost:3000/';
