@@ -15,7 +15,11 @@ import Typography from '@material-ui/core/Typography';
 const styles = {
   card: {
     maxWidth: '500px',
-    margin: '50px auto'
+    padding: '50px 0',
+    margin: '0 auto',
+    boxShadow: 'none',
+    borderBottom: '2px solid #aaa',
+    borderRadius: '0'
   },
   img: {
     display: 'block',

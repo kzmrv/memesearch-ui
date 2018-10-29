@@ -14,10 +14,10 @@ class App extends Component {
           <Toolbar>
             <Typography variant="h6" color="inherit">
               Meme Searcher
-          </Typography>
+            </Typography>
+            <SearchField />
           </Toolbar>
         </AppBar>
-        <SearchField />
         <MemesList />
       </div>
     );
