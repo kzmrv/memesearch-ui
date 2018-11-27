@@ -9,10 +9,33 @@ import { TextField } from '@material-ui/core';
 import { fetchMemeses } from '../../actions';
 
 const styles = theme => ({
+  wrapper: {
+    width: '80%',
+    color: '#fff'
+  },
   textField: {
     marginLeft: theme.spacing.unit,
     marginRight: theme.spacing.unit,
     width: '80%',
+    color: '#fff',
+    '& label': {
+      color: '#fff'
+    },
+    '& .MuiFormLabel-root-89.MuiInputLabel-root-82': {
+      color: '#fff'
+    },
+    '& > div:after': {
+      borderBottom: '2px solid #fff'
+    },
+    '& .MuiInput-underline-100:before': {
+      borderBottom: '2px solid #ddd'
+    },
+    '& .MuiInput-underline-100:after': {
+      borderBottom: '2px solid #ddd'
+    },
+    '& > div > input': {
+      color: '#fff'
+    }
   },
 });
 
@@ -43,7 +66,7 @@ class SearchField extends React.PureComponent {
   render() {
     const { classes } = this.props;
     return (
-      <div>
+      <div className={classes.wrapper}>
         <TextField
           id="searchedValue"
           label="Search for memes..."
